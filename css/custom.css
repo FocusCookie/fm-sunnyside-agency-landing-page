@@ -70,3 +70,28 @@
 .barlow {
   font-family: var(--font-barlow);
 }
+
+@media only screen and (min-width: 640px) {
+  .header--bg {
+    background-image: url("../images/desktop/image-header.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .nav-hamburger {
+    display: none;
+  }
+
+  #nav-open {
+    background: none;
+  }
+
+  #nav-open li {
+    font-weight: normal;
+    color: #fff;
+  }
+  #nav-open li:hover {
+    background: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+  }
+}
