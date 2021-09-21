@@ -1,5 +1,15 @@
 :root {
   --color-fm-yellow: #fbd600;
+  --color-fm-red: #fe7766;
+
+  --color-fm-text: #5b636d;
+  --color-fm-text-grey: #808397;
+  --color-fm-text-lightgrey: #a7aaad;
+  --color-fm-text-green: #24554a;
+  --color-fm-text-lightgreen: #90d4c6;
+  --color-fm-text-mediumgreen: #458d7e;
+  --color-fm-text-blue: #19536c;
+
   --font-barlow: Barlow, serif;
   --font-fraunces: Fraunces, serif;
 }
@@ -68,7 +78,81 @@
   font-family: var(--font-fraunces);
 }
 .barlow {
+  font-weight: 600;
   font-family: var(--font-barlow);
+}
+.fm-text {
+  color: var(--color-fm-text);
+}
+.fm-text--grey {
+  font-size: 18px;
+  color: var(--color-fm-text-grey);
+}
+.fm-text--green {
+  color: var(--color-fm-text-green);
+}
+.fm-text--blue {
+  color: var(--color-fm-text-blue);
+}
+.fm-text--lightgrey {
+  color: var(--color-fm-text-lightgrey);
+}
+.fm-text--lightgreen {
+  color: var(--color-fm-text-lightgreen);
+}
+.fm-text--mediumgreen {
+  color: var(--color-fm-text-mediumgreen);
+}
+
+.bg-egg {
+  background-image: url("../images/mobile/image-transform.jpg");
+}
+.bg-glass {
+  background-image: url("../images/mobile/image-stand-out.jpg");
+}
+.bg-cherry {
+  background-image: url("../images/mobile/image-graphic-design.jpg");
+}
+.bg-orange {
+  background-image: url("../images/mobile/image-photography.jpg");
+}
+.bg-fm--lightgreen {
+  background: var(--color-fm-text-lightgreen);
+}
+
+.sunnyside--green path {
+  fill: var(--color-fm-text-green);
+}
+
+.learnmore {
+  font-family: var(--font-fraunces);
+  font-weight: 900;
+}
+.learnmore--yellow::after {
+  content: "";
+  border-radius: 10px;
+  opacity: 0.25;
+  display: block;
+  position: relative;
+  height: 10px;
+  width: 137px;
+  background: var(--color-fm-yellow);
+  left: calc(50% - 69px);
+  transform: translateY(-0.7em);
+  z-index: -10;
+}
+.learnmore--red::after {
+  content: "";
+  border-radius: 10px;
+  opacity: 0.25;
+  display: block;
+  position: relative;
+  height: 10px;
+  width: 137px;
+  background: var(--color-fm-red);
+  left: calc(50% - 69px);
+  transform: translateY(-0.7em);
+  z-index: -10;
 }
 
 @media only screen and (min-width: 640px) {
