@@ -116,6 +116,23 @@
 .bg-orange {
   background-image: url("../images/mobile/image-photography.jpg");
 }
+
+.gallery {
+  height: 100vw;
+}
+.bg-milk {
+  background-image: url("../images/mobile/image-gallery-milkbottles.jpg");
+}
+.bg-orange-gal {
+  background-image: url("../images/mobile/image-gallery-orange.jpg");
+}
+.bg-cone {
+  background-image: url("../images/mobile/image-gallery-cone.jpg");
+}
+.bg-sugar {
+  background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
+}
+
 .bg-fm--lightgreen {
   background: var(--color-fm-text-lightgreen);
 }
@@ -155,6 +172,10 @@
   z-index: -10;
 }
 
+.social-icon:hover path {
+  fill: white;
+}
+
 @media only screen and (min-width: 640px) {
   .header--bg {
     background-image: url("../images/desktop/image-header.jpg");
@@ -177,5 +198,34 @@
   #nav-open li:hover {
     background: rgba(255, 255, 255, 0.25);
     cursor: pointer;
+  }
+
+  .bg-egg {
+    background-image: url("../images/desktop/image-transform.jpg");
+  }
+  .bg-glass {
+    background-image: url("../images/desktop/image-stand-out.jpg");
+  }
+  .bg-cherry {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+  }
+  .bg-orange {
+    background-image: url("../images/desktop/image-photography.jpg");
+  }
+
+  .gallery {
+    height: 447px;
+  }
+  .bg-milk {
+    background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+  }
+  .bg-orange-gal {
+    background-image: url("../images/desktop/image-gallery-orange.jpg");
+  }
+  .bg-cone {
+    background-image: url("../images/desktop/image-gallery-cone.jpg");
+  }
+  .bg-sugar {
+    background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
   }
 }
